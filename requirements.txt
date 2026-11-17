@@ -1,0 +1,10 @@
+Flask
+pypdf
+chromadb
+groq
+python-dotenv
+sentence-transformers==2.7.0
+torch==2.2.2
+numpy<2
+transformers<4.50.0
+gunicorn

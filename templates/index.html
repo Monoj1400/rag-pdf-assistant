@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG PDF Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Document Setup</h2>
+        <p>Upload a text-based PDF to start chatting.</p>
+        <input type="file" id="pdf-upload" accept=".pdf">
+        <button onclick="uploadPDF()" id="upload-btn">Process Document</button>
+        <div id="upload-status"></div>
+    </div>
+
+    <div class="main-content">
+        <div class="chat-container" id="chat-container">
+            <!-- Chat messages will appear here -->
+            <div class="message bot-message">
+                Hello! Upload a PDF on the left, and I will answer any questions you have about it.
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Ask a question about the document..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()" id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
