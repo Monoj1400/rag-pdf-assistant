@@ -1,8 +1,8 @@
-# RAG-Powered Document Assistant
+# 📄 RAG-Powered Document Assistant
 
 A production-grade, full-stack Retrieval-Augmented Generation (RAG) application. Upload a PDF, and chat with it to get grounded, citation-backed answers.
 
-*Live Demo:** [huggingface.co/spaces/Manoj1400/rag-pdf-assistant](https:huggingface.co/spaces/Manoj1400/rag-pdf-assistant )
+**🔴 Live Demo:** [huggingface.co/spaces/Manoj1400/rag-pdf-assistant](https://huggingface.co/spaces/Manoj1400/rag-pdf-assistant)
 
 ---
 
